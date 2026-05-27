@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="J16U PROJECTS — countdown to launch." />
+  <meta name="theme-color" content="#050505" />
+
+  <title>J16U PROJECTS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+  <div class="grid-plane" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="./" aria-label="J16U Projects home">
+        <span class="brand-mark">J16U</span>
+        <span class="brand-line"></span>
+        <span class="brand-sub">PROJECTS</span>
+      </a>
+
+      <nav class="top-links" aria-label="Top links">
+        <a href="https://jatindersinghpannu.github.io/">Personal page</a>
+        <a href="https://github.com/2001jatinderpannu">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="kicker reveal">PROJECT PAGE / LAUNCH TIMER</p>
+
+      <div class="title-wrap reveal delay-1">
+        <h1 id="page-title">J16U PROJECTS</h1>
+        <div class="title-stroke" aria-hidden="true">J16U PROJECTS</div>
+      </div>
+
+      <p class="subtitle reveal delay-2">
+        A project space opening on <span>28 August 2026</span>.
+      </p>
+
+      <section class="countdown-panel reveal delay-3" aria-label="Countdown to 28 August 2026">
+        <div class="panel-glare" aria-hidden="true"></div>
+
+        <div class="countdown-grid" role="timer" aria-live="polite">
+          <div class="time-block">
+            <span class="number" id="days">000</span>
+            <span class="label">Days</span>
+          </div>
+
+          <div class="time-block">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+          </div>
+
+          <div class="time-block">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+          </div>
+
+          <div class="time-block">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+          </div>
+
+          <div class="time-block milliseconds">
+            <span class="number" id="milliseconds">000</span>
+            <span class="label">Milliseconds</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="launch-meta reveal delay-4" aria-label="Launch metadata">
+        <span>Launch target</span>
+        <strong>28.08.2026</strong>
+        <span class="dot"></span>
+        <span>Europe/London</span>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> J16U Projects</span>
+      <span class="footer-line"></span>
+      <span>Built for GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
