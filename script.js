@@ -22,12 +22,12 @@ function updateCountdown() {
   const seconds = Math.floor((distance % 60_000) / 1_000);
   const milliseconds = Math.floor(distance % 1_000);
 
-  daysEl.textContent = pad(days, 3);
-  hoursEl.textContent = pad(hours);
-  minutesEl.textContent = pad(minutes);
-  secondsEl.textContent = pad(seconds);
-  millisecondsEl.textContent = pad(milliseconds, 3);
-
+daysEl.textContent = String(days).padStart(3, "0");
+hoursEl.textContent = String(hours).padStart(2, "0");
+minutesEl.textContent = String(minutes).padStart(2, "0");
+secondsEl.textContent = String(seconds).padStart(2, "0");
+millisecondsEl.textContent = String(milliseconds).padStart(3, "0");
+  
   requestAnimationFrame(updateCountdown);
 }
 
